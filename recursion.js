@@ -12,3 +12,4 @@ function findSequence(goal) {
 }
 
 findSquence(48);
+// (((1 * 3) + 5) * 3)
