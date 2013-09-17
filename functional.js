@@ -22,3 +22,16 @@ function reduce(combine, base, array) {
   });
   return base;
 }
+
+
+function add(a, b) {
+	return a + b;
+}
+
+function countZero(array) {
+	function counter(total, element) {
+		return total + (element === 0 ? 1 : 0);
+	}
+	return reduce(counter, 0, array);
+}
+
