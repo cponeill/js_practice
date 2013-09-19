@@ -18,3 +18,19 @@ db.query("SELECT * FROM posts with id = 1",
 		doSomethingWithPost(post);
 	});
 doSomethingElse();
+
+// Here is some code for listening for an event in a web browser (like a button click) with javascript.
+var clickCount = 0;
+document.getElementById('myButton').onclick = function() {
+	clickCount++;
+	alert("Clicked " + clickCount + " times.");
+};
+
+// Here it is in jQuery
+(function() {
+	var clickCount = 0;
+	$('button#myButton').click(function() {
+		clickCount++;
+		alert("Clicked " + clickCount + " times.");	
+	});
+})();
