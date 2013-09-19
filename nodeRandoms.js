@@ -34,3 +34,22 @@ document.getElementById('myButton').onclick = function() {
 		alert("Clicked " + clickCount + " times.");	
 	});
 })();
+
+// Crazy Code
+var myfunction = function() {
+	// do some weird and crazy shit man
+};
+myFunction.someProperty = 'CRAZY SHIT DUDE';
+console.log(myFunction.someProperty);
+// ---> "CRAZY SHIT DUDE"
+
+// Crazy morning code
+var a = {1: true, 2: false, 3: maybe, 4: not quite, 5: almost there, 6: GOT IT};
+console.log("This is a number: %d, and this is a string: %s, and this is an object outputted into JSON: %j", 42, "Hello", a);
+
+console.warn("WARNING!");
+
+//
+var util = require("util");
+var a = {1: true, 2: false};
+console.log(util.inspect(a));
