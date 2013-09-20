@@ -53,3 +53,13 @@ console.warn("WARNING!");
 var util = require("util");
 var a = {1: true, 2: false};
 console.log(util.inspect(a));
+
+// Tick Tock
+(function sechdule(){ 
+	setTimeout function() {
+		console.log("Tock");
+		schedule();
+		console.log("Tick");
+		schedule();
+	}, 2000);
+});
