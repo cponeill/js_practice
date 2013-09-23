@@ -49,11 +49,6 @@ console.log("This is a number: %d, and this is a string: %s, and this is an obje
 
 console.warn("WARNING!");
 
-//
-var util = require("util");
-var a = {1: true, 2: false};
-console.log(util.inspect(a));
-
 // Tick Tock
 (function sechdule(){ 
 	setTimeout function() {
