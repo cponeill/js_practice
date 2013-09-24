@@ -58,3 +58,17 @@ console.warn("WARNING!");
 		schedule();
 	}, 2000);
 });
+
+// Combining slow timeout with buffer
+var timeout = setTimeout(function() {
+	var buffer = new Buffer('Here lies a buffer');
+	var slice = new Buffer('50');
+	var startTarget = 0,
+		start = 30,
+		end = 80;
+	buffer.copy(slice, startTarget, start, end);
+	console.log('Let the Buffer stuff begin...');
+	console.log(buffer);
+	console.log(slice);
+	console.log('THIS TOOK FOREVER!!!');
+}, 5000);
