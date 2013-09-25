@@ -72,3 +72,13 @@ var timeout = setTimeout(function() {
 	console.log(slice);
 	console.log('THIS TOOK FOREVER!!!');
 }, 5000);
+
+// Here is the code to clear a timeout. Timeout B will cancel Timeout A
+var timeoutA = setTimeout ( function() {
+	console.log('Timeout A');
+}, 2000);
+
+var timeoutB = setTimeout ( function () {
+	console.log('Timeout B');
+	clearTimeout(timeoutA);
+}, 3000);
