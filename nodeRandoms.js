@@ -93,3 +93,8 @@ var intervalTwo = setInterval(function() {
 	console.log('Tock') // This will repeat until stopped
 	clearInterval(intervalOne);
 }, period);
+
+// nextTick
+process.nextTick(function() {
+	console.log('Yeah Baby');
+});
