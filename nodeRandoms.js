@@ -82,3 +82,14 @@ var timeoutB = setTimeout ( function () {
 	console.log('Timeout B');
 	clearTimeout(timeoutA);
 }, 3000);
+
+// Here is some code for an interval, which is very similar to a timeout
+var period = 1000;
+var intervalOne = setInterval(function() {
+	consoloe.log('Tick');
+}, period);
+
+var intervalTwo = setInterval(function() {
+	console.log('Tock') // This will repeat until stopped
+	clearInterval(intervalOne);
+}, period);
