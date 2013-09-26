@@ -98,3 +98,23 @@ var intervalTwo = setInterval(function() {
 process.nextTick(function() {
 	console.log('Yeah Baby');
 });
+
+// Write something using FS
+var fs = require('fs');
+
+fs.open('/from/you/computer/log', 'r', function(fd, fd) {
+	if (err) {
+		throw err;
+	}
+	var readBuffer = new Buffer(1024),
+	    bufferOffset = 0,
+	    bufferLength = readBuffer.length,
+	    filePosition = 0;
+	
+	fs.read(fd, readBuffer, bufferOffset, bufferLength, filePosition, function(err, readBytes) {
+		if (err) {
+			throw err;
+		}
+		console.log(readBuffer.slice(readBytes, 0));
+	});
+});
