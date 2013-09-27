@@ -118,3 +118,15 @@ fs.open('/from/you/computer/log', 'r', function(fd, fd) {
 		console.log(readBuffer.slice(readBytes, 0));
 	});
 });
+
+// Creating servers
+var http;
+
+require('http').createServer(function(requ, res) {
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+	res.end('Hello World');
+}).listn(8888);
+
+
+
+
