@@ -127,6 +127,16 @@ require('http').createServer(function(requ, res) {
 	res.end('Hello World');
 }).listn(8888);
 
+// Creating a server, running a 'hello world' in the server, and writing a query in the terminal
+var util = require('util');
+
+require('http').createServer(function(res, req) {
+	res.writeHead(200, {'Content-Type': 'text/plain', 'Cache-Control': 'max-age=3600'});
+	res.end('Hello World and all that jazz...');
+}).listen(8888);
+
+// ---> Run this program in the terminal. Open up another terminal window and type in the following
+curl -i http://localhost:8888
 
 
 
