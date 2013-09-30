@@ -152,3 +152,13 @@ server.on('Listening', function() {
 });
 server.bind(4000);
 
+// Child Process
+var exec = require('child_process').exec;
+
+exec('cat * .js wc -1', function(err, stdout, stderr) {
+	if (err) {
+	console.log('Child Process exited with error code ' + err.code);
+	return;
+	}
+	console.log(stdout);
+});
