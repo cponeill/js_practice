@@ -138,5 +138,17 @@ require('http').createServer(function(res, req) {
 // ---> Run this program in the terminal. Open up another terminal window and type in the following
 curl -i http://localhost:8888
 
+// Datagram server
+var dgram = require('dgram');
 
+var server = dgram.createSocket('udp4');
+server.on('message', function(message, rinfo) {
+	console.log('Server got message ' + message + ' from ' + rinfo.address + ':' + rinfo.port);
+});
+
+server.on('Listening', function() {
+	var address = server.address();
+	console.log('The server is listening on ' + address.address + ':' + address.port);
+});
+server.bind(4000);
 
