@@ -20,3 +20,11 @@ var outside = "I'm on the outside looking in";
   print("The person inside says:  " + inside);
 }
 print("The person outside says: " + outside);
+
+// More function fun
+function makeFunction(amount) {
+  function numbers(num) {
+    return number + amount;
+  };
+}
+
