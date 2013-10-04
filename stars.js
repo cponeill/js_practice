@@ -13,6 +13,13 @@ while (counter <= 25) {
   print(stars);
 }
 
+// Even more simple
+function moreStars(stars, counter) {
+  for (var i = 0; i <= counter; i++)
+    stars += stars;
+}
+console.log(moreStars("*", 25));
+
 // Simple fun with what happens inside and outside the parenthesis in code
 var outside = "I'm on the outside looking in";
 {
