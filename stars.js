@@ -14,9 +14,9 @@ while (counter <= 25) {
 }
 
 // Even more simple
-function moreStars(stars, counter) {
-  for (var i = 0; i <= counter; i++)
-    stars += stars;
+function moreStars(x, y) {
+  for (var i = 0; i <= y; i++)
+    x += x;
 }
 console.log(moreStars("*", 25));
 
