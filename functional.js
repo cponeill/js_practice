@@ -35,3 +35,8 @@ function countZero(array) {
 	return reduce(counter, 0, array);
 }
 
+function printArray(array) {
+	for (var i = 0; i <= array.length; i++) {
+		console.log(array[i]);
+	}
+}
