@@ -20,3 +20,15 @@ function Money(value) {
 
 var usDollar = new Money("U.S. Dollar");
 usDollar.currency("$100,000");
+
+// More fun with OOP
+function Sound(timbre) {
+  this.timbre = timbre;
+}
+
+Sound.prototype.listen = function(volume) {
+  print("When you listen you can hear the ", this.timbre, " of the sound. The ", volume, " doesn't matter");
+};
+
+var loudSounds = new Sound("volume")
+loudSounds.listen("color")
