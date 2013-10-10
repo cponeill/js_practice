@@ -1,10 +1,8 @@
 function Factorial(num) {
   this.num = num;
   this.number = function(count) {
-    if (num < count) {
+    while (num <= count) {
       return num * (num - count);
-    } else {
-      return num;
     }
   };
 }
