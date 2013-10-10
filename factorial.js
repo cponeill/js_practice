@@ -1,0 +1,2 @@
+function Factorial(num) {
+}
