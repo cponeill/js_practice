@@ -32,3 +32,16 @@ Sound.prototype.listen = function(volume) {
 
 var loudSounds = new Sound("volume")
 loudSounds.listen("color")
+
+// More and more and more
+Object.prototype.properties = function() {
+  var result = [];
+  for (var property in this) {
+    if (this.hasOwnProperty(property))
+      result.push(property);
+  }
+  return result;
+};
+
+var test = {"Your Name Here": true, "My Name Here": true};
+print(test.properties);
