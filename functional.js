@@ -40,3 +40,19 @@ function printArray(array) {
 		console.log(array[i]);
 	}
 }
+
+
+// More fun
+var greeting = "World";
+
+function printGreeting() {
+	print("print: " + greeting + ".");
+}
+
+function morePrint() {
+	var greeting = "Hello";
+	print("print: " + greeting + ".");
+	printGreeting();
+}
+
+morePrint();
