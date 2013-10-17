@@ -9,3 +9,16 @@ function myBirthday(me) {
 }
 
 console.log(me("enjoying my birthday"));
+
+
+// And this is how I code the day after my birthday in javascript
+
+function theDayAfterMyBirthDay(i) {
+  if (i == "totally enjoyed my birthday") {
+    print("DAMN RIGHT! IT WAS A GREAT BDAY!");
+  } else {
+    print("WHAT? IT WAS YOUR BIRTHDAY! GET IT!")
+  }
+} 
+
+console.log(i("totally enjoyed my birthday"));
