@@ -22,3 +22,13 @@ function theDayAfterMyBirthDay(i) {
 } 
 
 console.log(i("totally enjoyed my birthday"));
+
+// More Birthday shenanigans...
+
+var birthday = {};
+birthday.celebrate = function(me) {
+  print("It's time to celebrate ", this.me, ".");
+};
+
+
+birthday.celebrate("my birthday baby");
