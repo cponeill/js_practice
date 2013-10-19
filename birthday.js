@@ -32,3 +32,11 @@ birthday.celebrate = function(me) {
 
 
 birthday.celebrate("my birthday baby");
+
+// Even more birthday code
+
+function birthday(x) {
+  return x;
+}
+
+console.log("HAPPY BIRTHDAY TO ME!");
