@@ -45,7 +45,8 @@ console.log("HAPPY BIRTHDAY TO ME!");
 // Final Birthday code
 
 function endOfBirthday(me) {
-  this.me = me;
-  print("It is the end of my ", this.me, " weekend. Time to get going with my projects.").
+  print("It is the end of my ", me, " weekend. Time to get going with my projects.").
 }
+
+console.log(endOfBirthday("BIRTHDAY"));
 
