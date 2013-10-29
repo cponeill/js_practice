@@ -8,3 +8,19 @@ function fib(x) {
 }
 
 console.log(fib(2));
+
+// Here is some more fib fun
+
+
+var limit = 4000000;
+var sum = 0;
+a = 1;
+b = 1;
+c = a + b;
+while (c < limit) {
+  sum += c;
+  a = b + c;
+  b = c + a;
+  c = a + b;
+  console.log(sum);
+}
