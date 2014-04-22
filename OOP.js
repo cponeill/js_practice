@@ -45,3 +45,15 @@ Object.prototype.properties = function() {
 
 var test = {"Your Name Here": true, "My Name Here": true};
 print(test.properties);
+
+// Here is some random code too
+
+function isHere() {
+    return true;
+}
+
+var isAwake = function() {
+    return true;
+}
+
+console.log(isHere, isAwake);
