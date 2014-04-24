@@ -8,5 +8,7 @@ function addArray(arr) {
   return sum;
 }
 
+/*
 =>addArray([2, 3, 4, 5]);
 => 14
+*/
